@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+}
+.maze-body{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+}
+.maze-block{
+  border: 1px solid black;
+  background-color: royalblue;
+  height:76px;
+  width: 70px;
+  display: inline-block;
+  /* display: flex; */
+  /* flex-direction: column; */
+  color:white;
+  text-align: center;
+}
+.maze-block-red{
+  background: url("https://as2.ftcdn.net/v2/jpg/01/32/81/21/1000_F_132812123_FzLr5WBXVJ0nHFhKKG5xm8u4uYt4t6Bz.jpg");
+  background-size: contain;
+  border: 1px solid black;
+  height: 76px;
+  width: 70px;
+  display: inline-block;
+  /* display: flex; */
+  color: white;
+  text-align: center;
+}
+.maze-block-green{
+  background-color: rgb(80, 214, 80);
+  border: 1px solid black;
+  height: 76px;
+  width: 70px;
+  display: inline-block;
+  /* display: flex; */
+  color: white;
+  text-align: center;
+}
+.maze-block-blue {
+  background-color: rgb(80, 91, 241);
+  border: 1px solid black;
+  height: 76px;
+  width: 70px; 
+  display: inline-block;
+  /* display: flex; */
+  color: white;
+  text-align: center;
+}
+.maze-row{
+  /* height:78px; */
+  display: flex;
+  margin-inline: 10px;
+}
+h2{
+  margin: 10px;
+}
+.paths-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.total-paths{
+  width:100%;
+  font-size: 1.3rem;
+  margin: 6px;
+  color:rgb(78, 78, 230);
+}
+button{
+  width:85px;
+  padding: 10px 5px;
+  font-size: 1rem;
+  margin: 5px;
+}
+a {
+  width: 80px;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  margin: 5px;
+  background-color: rgb(175, 114, 232);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.sign{
+  font-size: 1rem;
+}
+.target-image{
+  max-width: 100%;
+  height: 76px;
+  display: flex;
+}
+.path-heading{
+  color:rgb(91, 91, 233);
+  margin-block:20px;
+}
+
+.loading-container{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loading-container i{
+  font-size: 2rem;
+  margin-block:1rem;
+}
+.path-heading-no-path{
+  color:red;
+  margin-block: 20px;
+}
+
+.error-message{
+  color:red;
+  margin-block:1rem;
+  font-size: 1.2rem;
+}
+
+.row-col-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height:100vh;
+  background-color: rgba(255, 255, 255, 0.94);
+  width:100vw;
+}
+.row-col-form input{
+  padding: 0.3rem;
+}
+.row-col-form label{
+  font-weight: 700;
+  margin-block:5px ;
+}
+
+.remove-row-col-form{
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.error{
+  color: red;
+}
